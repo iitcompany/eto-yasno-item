@@ -1,8 +1,5 @@
 $(document).ready(function() {
     $("#gallerySlider").lightSlider({
-        // autoWidth: true,
-        pager: true,
-        currentPagerPosition: 'middle',
         item: 1,
         useCSS: false,
         loop: true,
@@ -13,5 +10,17 @@ $(document).ready(function() {
         thumbMargin: 12,
         prevHtml: '<button class="button button--gallery button--gallery--prev"></button>',
         nextHtml: '<button class="button button--gallery button--gallery--next"></button>',
+        pager: false
+    });
+
+    $("#feedbackSlider").lightSlider({
+        adaptiveHeight: true,
+        item: 1,
+        useCSS: false,
+        loop: true,
+        slideMargin: 0,
+        prevHtml: '<button class="button button--feedback button--feedback--prev"></button>',
+        nextHtml: '<button class="button button--feedback button--feedback--next"></button>',
+        pager: false
     });
 });
