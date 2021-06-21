@@ -3,7 +3,7 @@
   font-size: 2.4rem
   line-height: 2.9rem
   letter-spacing: 0.4px
-  margin: 12px 0
+  margin: 20px 0
   &--light
     color: $text-light
   &--primary-dark
@@ -111,6 +111,33 @@
   &--dark
     background-color: $text-dark
     color: $text-light
+  &--gallery
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 40px
+    height: 60px
+    border: none
+    background-color: $dark-opacity
+    &--prev:after
+      margin-left: 10px
+      content: ''
+      display: flex
+      width: 20px
+      height: 20px
+      border-bottom: 2px solid $text-light
+      border-left: 2px solid $text-light
+      transform: rotate(45deg)
+    &--next:after
+      margin-right: 10px
+      content: ''
+      display: flex
+      width: 20px
+      height: 20px
+      border-bottom: 2px solid $text-light
+      border-right: 2px solid $text-light
+      transform: rotate(-45deg)
+
 .button + .button
   margin-left: 5px
 .input
