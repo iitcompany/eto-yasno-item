@@ -5,15 +5,20 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="./individual/public/libs/lightslider/lightslider.min.css" rel="stylesheet" type="text/css"/>
+    <link href="./individual/public/libs/slick/slick.css" rel="stylesheet" type="text/css"/>
     <link href="./individual/public/css/style.css" rel="stylesheet" type="text/css"/>
     <title>Мастерская</title>
 </head>
 <body class="body">
 <div class="side-bar">
     <div class="side-bar__content">
-        <div class="logo">
-            <img src="./individual/public/images/logo-dark.png" alt="logo"/>
+        <div class="block block--between">
+            <div class="logo">
+                <img src="./individual/public/images/logo-dark.png" alt="logo"/>
+            </div>
+            <div class="burger-menu">
+                <button class="burger-menu__button"><span class="burger-menu__line"></span></button>
+            </div>
         </div>
         <ul class="nav">
             <li><a href="#" class="nav__item">Проекты</a></li>
@@ -72,30 +77,53 @@
     </section>
     <section class="section gallery" id="gallery">
         <div class="container">
-            <div class="block">
-                <ul class="slider" id="gallerySlider">
-                    <li class="slide" data-thumb="./individual/public/images/project-1.jpg">
+            <div class="block block--column">
+                <div class="slider gallery-slider-for">
+                    <div class="slide">
                         <img src="./individual/public/images/project-1.jpg" class="img" alt="Проект"/>
-                    </li>
-                    <li class="slide" data-thumb="./individual/public/images/project-1.jpg">
+                    </div>
+                    <div class="slide">
                         <img src="./individual/public/images/project-1.jpg" class="img" alt="Проект"/>
-                    </li>
-                    <li class="slide" data-thumb="./individual/public/images/project-1.jpg">
+                    </div>
+                    <div class="slide">
                         <img src="./individual/public/images/project-1.jpg" class="img" alt="Проект"/>
-                    </li>
-                    <li class="slide" data-thumb="./individual/public/images/project-1.jpg">
+                    </div>
+                    <div class="slide">
                         <img src="./individual/public/images/project-1.jpg" class="img" alt="Проект"/>
-                    </li>
-                    <li class="slide" data-thumb="./individual/public/images/project-1.jpg">
+                    </div>
+                    <div class="slide">
                         <img src="./individual/public/images/project-1.jpg" class="img" alt="Проект"/>
-                    </li>
-                    <li class="slide" data-thumb="./individual/public/images/project-1.jpg">
+                    </div>
+                    <div class="slide">
                         <img src="./individual/public/images/project-1.jpg" class="img" alt="Проект"/>
-                    </li>
-                    <li class="slide" data-thumb="./individual/public/images/project-1.jpg">
+                    </div>
+                    <div class="slide">
                         <img src="./individual/public/images/project-1.jpg" class="img" alt="Проект"/>
-                    </li>
-                </ul>
+                    </div>
+                </div>
+                <div class="slider gallery-slider-nav">
+                    <div class="slide">
+                        <img src="./individual/public/images/project-1.jpg" class="img" alt="Проект"/>
+                    </div>
+                    <div class="slide">
+                        <img src="./individual/public/images/project-1.jpg" class="img" alt="Проект"/>
+                    </div>
+                    <div class="slide">
+                        <img src="./individual/public/images/project-1.jpg" class="img" alt="Проект"/>
+                    </div>
+                    <div class="slide">
+                        <img src="./individual/public/images/project-1.jpg" class="img" alt="Проект"/>
+                    </div>
+                    <div class="slide">
+                        <img src="./individual/public/images/project-1.jpg" class="img" alt="Проект"/>
+                    </div>
+                    <div class="slide">
+                        <img src="./individual/public/images/project-1.jpg" class="img" alt="Проект"/>
+                    </div>
+                    <div class="slide">
+                        <img src="./individual/public/images/project-1.jpg" class="img" alt="Проект"/>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -151,8 +179,8 @@
         <div class="container">
             <h2 class="title">Отзывы</h2>
             <div class="block">
-                <ul class="slider" id="feedbackSlider">
-                    <li class="slide">
+                <div class="slider feedback-slider" id="feedbackSlider">
+                    <div class="slide">
                         <div class="slide--title">
                             <p>Александр</p>
                             <p>Севастьянов</p>
@@ -162,8 +190,8 @@
                             <p>ООО «СитиСтайл»</p>
                         </div>
                         <p class="slide--text text">В строительстве исключительную значимость имеет выбор партнеров, подрядчиков и поставщиков. Если вам нужно найти компанию, которая занимается архитектурно-строительным проектированием, вы можете смело выбрать проектую мастерскую ITEM. Опыт работы и профессиональный коллектив позволяют компании действовать слаженно, эффективно и оперативно.</p>
-                    </li>
-                    <li class="slide">
+                    </div>
+                    <div class="slide">
                         <div class="slide--title">
                             <p>Александр</p>
                             <p>Севастьянов</p>
@@ -172,9 +200,9 @@
                             <p>управляющий партнёр</p>
                             <p>ООО «СитиСтайл»</p>
                         </div>
-                        <p class="slide--text text">В строительстве исключительную значимость имеет выбор партнеров, подрядчиков и поставщиков. Если вам нужно найти компанию, которая занимается архитектурно-строительным проектированием, вы можете смело выбрать проектую мастерскую ITEM. Опыт работы и профессиональный коллектив позволяют компании действовать слаженно, эффективно и оперативно.</p>
-                    </li>
-                    <li class="slide">
+                        <p class="slide--text text">В строительстве исключительную значимость имеет выбор партнеров, подрядчиков и поставщиков. Опыт работы и профессиональный коллектив позволяют компании действовать слаженно, эффективно и оперативно.</p>
+                    </div>
+                    <div class="slide">
                         <div class="slide--title">
                             <p>Александр</p>
                             <p>Севастьянов</p>
@@ -183,9 +211,9 @@
                             <p>управляющий партнёр</p>
                             <p>ООО «СитиСтайл»</p>
                         </div>
-                        <p class="slide--text text">В строительстве исключительную значимость имеет выбор партнеров, подрядчиков и поставщиков. Если вам нужно найти компанию, которая занимается архитектурно-строительным проектированием, вы можете смело выбрать проектую мастерскую ITEM. Опыт работы и профессиональный коллектив позволяют компании действовать слаженно, эффективно и оперативно.</p>
-                    </li>
-                </ul>
+                        <p class="slide--text text">В строительстве исключительную значимость имеет выбор партнеров, подрядчиков и поставщиков. В строительстве исключительную значимость имеет выбор партнеров, подрядчиков и поставщиков. Если вам нужно найти компанию, которая занимается ар Если вам нужно найти компанию, которая занимается архитектурно-строительным проектированием, вы можете смело выбрать проектую мастерскую ITEM. Опыт работы и профессиональный коллектив позволяют компании действовать слаженно, эффективно и оперативно.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -249,7 +277,7 @@
     </div>
 </footer>
 <script src="./individual/public/libs/jquery/jquery-2.2.3.min.js"></script>
-<script src="./individual/public/libs/lightslider/lightslider.min.js"></script>
+<script src="./individual/public/libs/slick/slick.min.js"></script>
 <script src="./individual/public/js/script.js"></script>
 </body>
 </html>
