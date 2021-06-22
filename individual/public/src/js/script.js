@@ -26,9 +26,10 @@ $(document).ready(function() {
     });
 
     $('.js-init-menu').on('click', function() {
-
+        let modalContent = $('.modal-content').clone();
+        console.log(this)
         $.arcticmodal({
-            content: '',
+            content: modalContent,
             overlay: {
                 css: {
                     backgroundColor: '#666666',

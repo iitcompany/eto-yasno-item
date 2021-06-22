@@ -1,6 +1,6 @@
 .card
   position: relative
-  flex: 1 2 33%
+  flex: 1 1 33%
   padding: 80px 5px 20px 60px
   //border: 1px dotted $text-opacity
   .text--number
@@ -8,3 +8,9 @@
     top: 0
     left: 0
 
+@media screen and (max-width: 768px)
+  .card
+    flex: 1 1 100%
+    padding: 15px 5px 20px 65px
+    .title--h3
+      margin-top: 0
