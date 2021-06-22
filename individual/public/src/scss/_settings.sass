@@ -72,14 +72,22 @@ h1, h2, h3, h4, h5, h6
   &--between
     align-items: center
     justify-content: space-between
+  &--full-width
+    flex: 1 1 100%
 
-@media screen and (max-width: 1440px)
 
+@media screen and (max-width: 1280px)
   main
     padding-left: 0
   .container
-    max-width: 90%
+    max-width: 100%
     //width: 1045px
     margin-right: auto
     margin-left: auto
+  .container > h2
+    padding: 0 20px
+  .block
+    padding: 0 20px
+    &--full-width
+      padding: 0
 

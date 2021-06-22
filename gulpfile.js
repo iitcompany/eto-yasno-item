@@ -143,4 +143,4 @@ gulp.task('watch', function(){
 // gulp.task('watch', function () {
 //     return gulp.watch('./individual/public/src/scss/**/*.+(scss|sass)', gulp.series(['css:build']));
 // });
-gulp.task('default', gulp.series(['build', 'webserver', 'watch']));
+gulp.task('default', gulp.series(['build', 'watch']));

@@ -11,15 +11,16 @@
     <title>Мастерская</title>
 </head>
 <body class="body">
+<main class="main">
 <div class="sidebar">
-<div class="block block--between">
-    <div class="logo">
-        <img src="./images/logo-dark.png" alt="logo"/>
+    <div class="block block--between">
+        <div class="logo">
+            <img src="./images/logo-dark.png" alt="logo"/>
+        </div>
+        <div class="burger-menu">
+            <button class="burger-menu__button js-init-menu"><span class="burger-menu__line"></span></button>
+        </div>
     </div>
-    <div class="burger-menu">
-        <button class="burger-menu__button js-init-menu"><span class="burger-menu__line"></span></button>
-    </div>
-</div>
     <ul class="sidebar__nav nav">
         <li><a href="#" class="nav__item">Проекты</a></li>
         <li><a href="#" class="nav__item nav__item--active">Мастерская</a>
@@ -49,7 +50,6 @@
         </div>
     </div>
 </div>
-<main class="main">
 
 <section class="header">
     <div class="container">
@@ -79,7 +79,7 @@
 </section>
 <section class="section gallery" id="gallery">
     <div class="container">
-        <div class="block block--column">
+        <div class="block block--column block--full-width">
             <div class="slider gallery-slider-for">
                 <div class="slide">
                     <img src="./images/project-1.jpg" class="img" alt="Проект"/>
@@ -132,7 +132,7 @@
 <section class="section section--dark" id="company-values">
     <div class="container">
         <h2 class="title title--primary-dark">Ценности компании:</h2>
-        <div class="wrapper wrapper--flex-wrap">
+        <div class="block block--wrap">
             <div class="card">
                 <span class="text text--number">01</span>
                 <h3 class="title title--h3 title--primary-dark">Эффективность</h3>
@@ -172,7 +172,7 @@
         <div class="block">
             <p class="text text--accent">Наполняем здания функциями, разрабатываем комфортные условия для людей и обеспечиваем высокую окупаемость инвестиций в строительство. Всю технологию зданий и сооружений берем на себя.</p>
         </div>
-        <div class="block">
+        <div class="block block--full-width">
             <img src="./images/team-1.jpg" class="img" alt="Команда"/>
         </div>
     </div>

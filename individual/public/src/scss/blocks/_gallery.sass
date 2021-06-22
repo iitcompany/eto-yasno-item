@@ -16,10 +16,10 @@
   .gallery-slider-for
     position: relative
     max-width: 100%
-    margin-bottom: 15px
     background-color: $text-dark
   .gallery-slider-nav
     max-height: 90px
+    margin-top: 15px
     .slick-slide
       margin-right: 12px
       img
@@ -29,3 +29,13 @@
     .slick-current.slick-active img
       border: 4px solid $primary-dark
       filter: brightness(1)
+
+@media screen and (max-width: 1280px)
+  .gallery
+    padding: 0
+    &:after
+      height: 150px
+    .gallery-slider-for
+      //margin: 0
+    .gallery-slider-nav
+      display: none
