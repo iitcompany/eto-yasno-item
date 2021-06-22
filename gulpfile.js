@@ -89,6 +89,11 @@ gulp.task('html:build', function () {
         .pipe(gulp.dest(path.build.html)) //Выплюнем их в папку build
         .pipe(reload({stream: true})); //И перезагрузим наш сервер для обновлений
 });
+gulp.task('ui-kit:build', function () {
+    return gulp.src('./individual/views/layouts/ui-kit.html') //Выберем файлы по нужному пути
+        .pipe(gulp.dest('./individual/public/build/')) //Выплюнем их в папку build
+        .pipe(reload({stream: true})); //И перезагрузим наш сервер для обновлений
+});
 gulp.task('js:build', function () {
     return gulp.src(path.src.js) //Найдем наш main файл
         .pipe(rigger()) //Прогоним через rigger
@@ -128,6 +133,7 @@ gulp.task('fonts:build', function() {
 
 gulp.task('build', gulp.series([
     'html:build',
+    'ui-kit:build',
     'js:build',
     'css:build',
     'fonts:build',
