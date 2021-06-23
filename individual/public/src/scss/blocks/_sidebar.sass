@@ -30,6 +30,9 @@
     line-height: 1.6rem
     text-transform: uppercase
     color: $primary-dark
+    &:focus
+      border: none
+      outline: none
     &--active
       color: $text-dark
       display: flex
@@ -52,10 +55,14 @@
     line-height: 1.35rem
     text-transform: none
     color: $text-gray
-    &--active
+    &:hover
+      color: $primary-dark
+    &:focus
       color: $text-dark
-      &:after
-        display: none
+    //&:active
+    //  border: none
+    //  outline: none
+    //  color: $text-dark
 .burger-menu
   display: none
 

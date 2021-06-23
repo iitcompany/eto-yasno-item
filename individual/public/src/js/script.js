@@ -3,7 +3,7 @@ $(document).ready(function() {
     $('.gallery-slider-for').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        fade: true,
+        // fade: true,
         asNavFor: '.gallery-slider-nav',
         prevArrow: '<button class="button button--gallery button--gallery--prev"></button>',
         nextArrow: '<button class="button button--gallery button--gallery--next"></button>',
@@ -13,13 +13,13 @@ $(document).ready(function() {
         slidesToScroll: 1,
         asNavFor: '.gallery-slider-for',
         arrows: false,
-        focusOnSelect: true
+        focusOnSelect: true,
+        centerMode: true
     });
     // init feedback-slider
     $('.feedback-slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        asNavFor: '.gallery-slider-nav',
         prevArrow: '<button class="button button--feedback button--feedback--prev"></button>',
         nextArrow: '<button class="button button--feedback button--feedback--next"></button>',
         adaptiveHeight: true
@@ -53,7 +53,6 @@ $(document).ready(function() {
         $(modalWrapper).append(modalButton);
         $(modalWrapper).append(modalButton);
 
-        console.log(this)
         $.arcticmodal({
             content: modalWrapper,
             overlay: {
@@ -72,8 +71,8 @@ $(document).ready(function() {
             top = $(id).offset().top,
             navSubItem = $('.nav-sub').find('.nav__item');
 
-        $(navSubItem).removeClass('nav__item--active');
-        $(this).addClass('nav__item--active');
+        // $(navSubItem).removeClass('nav__item--active');
+        // $(this).addClass('nav__item--active');
         $('body,html').animate({scrollTop: top}, 1500);//анимируем переход на расстояние - top за 1500 мс
     });
 
