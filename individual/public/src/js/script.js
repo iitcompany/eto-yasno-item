@@ -63,6 +63,19 @@ $(document).ready(function() {
                 }
             }
         });
-    })
+    });
+
+    $('.nav-sub').on('click','.nav__item', function (e) {
+        e.preventDefault();
+
+        const id  = $(this).attr('href'),
+            top = $(id).offset().top,
+            navSubItem = $('.nav-sub').find('.nav__item');
+
+        $(navSubItem).removeClass('nav__item--active');
+        $(this).addClass('nav__item--active');
+        $('body,html').animate({scrollTop: top}, 1500);//анимируем переход на расстояние - top за 1500 мс
+    });
+
 
 });
