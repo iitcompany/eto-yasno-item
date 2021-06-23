@@ -3,7 +3,7 @@
   font-size: 2.4rem
   line-height: 2.9rem
   letter-spacing: 0.4px
-  margin: 20px 0
+  margin: 0 0 20px
   &--light
     color: $text-light
   &--primary-dark
@@ -82,23 +82,11 @@
       margin-bottom: 3px
       background: url(../images/icons/arrow-down.svg) no-repeat center / cover
   &--primary-dark
-    text-transform: capitalize
+    text-transform: none
     color: $primary-dark
-.link-icon
-  position: relative
-  min-width: 33px
-  width: 33px
-  min-height: 33px
-  height: 33px
-  background-color: transparent
-  border: 1px solid $text-light
-  display: flex
-  justify-content: center
-  align-items: center
-.link-icon > svg
-  width: 16px
-  height: 16px
-  fill: $text-light
+
+
+
 .button
   width: 44px
   height: 44px
@@ -194,8 +182,6 @@
   margin-left: -1px
 .footer .link--files
   &:before
-    width: 84px
-    height: 59px
     background-image: url(../images/icons/presentation-light.svg)
 .footer .link--arrow-down
   font-size: 1.3rem
@@ -206,12 +192,55 @@
   &:after
     background-image: url(../images/icons/arrow-down-light.svg)
 
-
 .social-network
   display: flex
   margin-right: 15px
-  .link-icon + .link-icon
-    margin-left: 8px
+.link-icon
+  position: relative
+  min-width: 33px
+  width: 33px
+  min-height: 33px
+  height: 33px
+  background-color: transparent
+  border: 1px solid $text-light
+  display: flex
+  justify-content: center
+  align-items: center
+  &:after
+    content: ''
+    position: absolute
+    top: 50%
+    left: 50%
+    display: block
+    width: 100%
+    height: 100%
+    transform: translate(-50%, -50%)
+    background: transparent no-repeat center
+  &--vk
+    &:after
+      background-image: url(../images/icons/vk.svg)
+      background-size: 16px
+    &:hover:after
+      background-image: url(../images/icons/vk-dark.svg)
+  &--facebook
+    &:after
+      background-image: url(../images/icons/fb.svg)
+      background-size: 17px
+    &:hover:after
+      background-image: url(../images/icons/fb-dark.svg)
+  &--instagram
+    &:after
+      background-image: url(../images/icons/instagram.svg)
+      background-size: 17px
+    &:hover:after
+      background-image: url(../images/icons/instagram-dark.svg)
+  &:hover
+    &:after
+      background-color: $text-light
+
+
+.link-icon + .link-icon
+  margin-left: 8px
 
 
 @media screen and (max-width: 1440px)
@@ -222,13 +251,13 @@
       &--next
         right: 10px
 
-@media screen and (max-width: 1280px)
+@media screen and (min-width: 320px) and (max-width: 1280px)
   .text
     &--accent
       font-size: 1.3rem
       line-height: 1.7rem
 
-@media screen and (max-width: 768px)
+@media screen and (min-width: 320px) and (max-width: 768px)
   .text
     &--number
       font-size: 3.2rem
@@ -243,3 +272,14 @@
       //  left: 10px
       //&--next
       //  right: 10px
+@media screen and (min-width: 320px) and (max-width: 425px)
+  .link--files
+    &:before
+      margin-right: 7px
+      width: 65px
+      height: 45px
+@media screen and (min-width: 320px) and (max-width: 375px)
+  .link--arrow-down
+    font-size: 1.1rem
+    &:after
+      display: none

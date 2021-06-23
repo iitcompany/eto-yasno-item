@@ -26,7 +26,8 @@ $(document).ready(function() {
     });
 
     $('.js-init-menu').on('click', function() {
-        let modalContent = $('.modal-content').clone();
+        let modalContent = $('.menu-wrapper').clone();
+
         console.log(this)
         $.arcticmodal({
             content: modalContent,

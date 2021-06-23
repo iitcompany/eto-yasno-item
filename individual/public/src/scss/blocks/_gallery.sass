@@ -19,9 +19,9 @@
     background-color: $text-dark
   .gallery-slider-nav
     max-height: 90px
-    margin-top: 15px
+    margin: 15px 0 0 -12px
     .slick-slide
-      margin-right: 12px
+      margin-left: 12px
       img
         height: 90px
         filter: brightness(0.5)
@@ -30,12 +30,20 @@
       border: 4px solid $primary-dark
       filter: brightness(1)
 
+@media screen and (max-width: 1440px)
+  .gallery
+    .gallery-slider-nav
+      max-height: 120px
+      .slick-slide
+        margin-left: 12px
+        img
+          height: 120px
+
 @media screen and (max-width: 1280px)
   .gallery
     padding: 0
     &:after
       height: 150px
-    .gallery-slider-for
-      //margin: 0
+
     .gallery-slider-nav
       display: none
