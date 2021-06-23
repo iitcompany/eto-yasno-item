@@ -26,11 +26,36 @@ $(document).ready(function() {
     });
 
     $('.js-init-menu').on('click', function() {
-        let modalContent = $('.menu-wrapper').clone();
+        let menuContent = $('.menu-wrapper').clone();
 
         console.log(this)
         $.arcticmodal({
-            content: modalContent,
+            content: menuContent,
+            overlay: {
+                css: {
+                    backgroundColor: '#666666',
+                    opacity: .1
+                }
+            }
+        });
+    })
+
+    $('.js-init-download').on('click', function() {
+        let modalContent = $('.modal-content').clone(),
+            modalWrapper = $('<div class="modal-wrapper"></div>'),
+            modalClose = $('<button class="modal__button-close button-close arcticmodal-close"><span class="button-line"></span></button>'),
+            modalButton = $('<button class="modal__button "></button>').text(this.dataset.button),
+            modalTitle = $('<h2 class="title"></h2>').text(this.dataset.title);
+
+        $(modalWrapper).append(modalClose);
+        $(modalWrapper).append(modalTitle);
+        $(modalWrapper).append(modalContent);
+        $(modalWrapper).append(modalButton);
+        $(modalWrapper).append(modalButton);
+
+        console.log(this)
+        $.arcticmodal({
+            content: modalWrapper,
             overlay: {
                 css: {
                     backgroundColor: '#666666',
